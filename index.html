@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ziming Li, Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Ziming Li, PhD candidate at RIT focusing on VR, LLM-Driven Avatars, and Accessibility.">
+  <style>
+    :root {
+      --bg: #0b0c10;
+      --card: #15171d;
+      --muted: #94a3b8;
+      --text: #e5e7eb;
+      --accent: #60a5fa;
+      --ring: rgba(96, 165, 250, 0.35);
+      --chip: #1f2430;
+      --chip-border: #2a3140;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
+      background: linear-gradient(180deg, #0b0c10, #0e1016);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .wrap {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    header.site {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 0 24px;
+      position: sticky;
+      top: 0;
+      background: rgba(11, 12, 16, 0.65);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid #1f2330;
+      z-index: 20;
+    }
+
+    nav a {
+      margin: 0 10px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    nav a:hover {
+      color: var(--text);
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 24px;
+      align-items: center;
+      padding: 40px 0 8px;
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .hero .title {
+      font-size: 42px;
+      line-height: 1.2;
+      margin: 0;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      color: var(--muted);
+      margin-top: 8px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 6px 10px;
+      border: 1px solid #263043;
+      border-radius: 999px;
+      background: rgba(96, 165, 250, 0.06);
+      color: #cfe3ff;
+      font-size: 12px;
+      letter-spacing: .3px;
+    }
+
+    .cta {
+      display: flex;
+      gap: 12px;
+      margin-top: 18px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 14px;
+      border-radius: 10px;
+      border: 1px solid #263043;
+      background: #11131a;
+      color: var(--text);
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .btn:hover {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 4px var(--ring);
+    }
+
+    .btn.primary {
+      background: var(--accent);
+      color: #0b0c10;
+      border-color: var(--accent);
+    }
+
+    section {
+      margin: 36px 0 8px;
+    }
+
+    h2 {
+      margin: 0 0 16px;
+      font-size: 22px;
+      letter-spacing: .2px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: repeat(12, 1fr);
+    }
+
+    .col-6 {
+      grid-column: span 6;
+    }
+
+    .col-4 {
+      grid-column: span 4;
+    }
+
+    .col-12 {
+      grid-column: span 12;
+    }
+
+    @media (max-width: 900px) {
+
+      .col-6,
+      .col-4 {
+        grid-column: span 12;
+      }
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid #1e2130;
+      border-radius: 14px;
+      padding: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h3 {
+      margin: 0 0 6px;
+      font-size: 18px;
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .chip {
+      font-size: 12px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--chip);
+      border: 1px solid var(--chip-border);
+      color: #d1d7e4;
+    }
+
+    .list {
+      margin: 8px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .list li {
+      margin: 6px 0;
+    }
+
+    .kv {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 8px;
+    }
+
+    @media (max-width: 600px) {
+      .kv {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    footer.site {
+      margin-top: 36px;
+      padding: 18px 0 26px;
+      color: var(--muted);
+      font-size: 13px;
+      border-top: 1px solid #1f2330;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header class="site" role="banner" aria-label="Site header">
+      <div><strong>Ziming Li</strong></div>
+      <nav aria-label="Primary">
+        <a href="#projects">Projects</a>
+        <a href="#research">Publications</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero" id="top">
+      <div>
+        <span class="badge">VR, LLM driven agents, Accessibility</span>
+        <h1 class="title">Portfolio, Ziming Li</h1>
+        <p class="subtitle">PhD candidate in Computing and Information Sciences at Rochester Institute of Technology,
+          advised by Dr. Roshan L. Peiris. Member of CAIR and AIR Labs. Based in Rochester, NY.</p>
+        <div class="cta">
+          <a class="btn primary" href="#projects">View projects</a>
+          <a class="btn" href="mailto:zl1398@rit.edu">Email me</a>
+          <a class="btn" href="https://liziming.com" target="_blank" rel="noopener">Website</a>
+          <a class="btn" href="https://github.com/Reedo0910" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/ziming--li" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+        <p class="meta">Last updated 2025-11-09</p>
+      </div>
+      <div class="card">
+        <div class="kv">
+          <div>Focus</div>
+          <div>VR/MR prototyping, LLM avatars, accessible interaction</div>
+          <div>Methods</div>
+          <div>Task design, mixed methods, telemetry, rapid prototyping</div>
+          <div>Tech</div>
+          <div>Unity, JavaScript, Node.js, Svelte, Vue, C#</div>
+          <div>Open to</div>
+          <div>UX Research, UX Engineer, VR/MR Prototyper, Game UX</div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="projects">
+      <h2>Selected projects</h2>
+      <div class="grid">
+
+        <article class="card col-6" aria-labelledby="p-envaware-title">
+          <img src="https://liziming.com/images//teasers/2025-ieee-vr-llm-spatial-interactions.png"
+            alt="Environment aware LLM avatar interactions in a grocery scene"
+            style="width:100%;border-radius:10px;margin-bottom:10px;">
+          <h3 id="p-envaware-title">Environment and Interaction Aware Gen AI Avatars in VR</h3>
+          <p class="meta">LLM agents perceive scene layout and interaction cues, then produce context aligned dialogue
+            and actions for role play training.</p>
+          <div class="chips"><span class="chip">VR</span><span class="chip">LLM</span></div>
+          <ul class="list">
+            <li><strong>Links</strong> <a href="https://liziming.com/projects/2025-vr-llm-spatial-avatar/"
+                target="_blank" rel="noopener">Project page</a> · <a
+                href="https://ieeexplore.ieee.org/document/10796354" target="_blank" rel="noopener">IEEE VR 2025</a>
+            </li>
+          </ul>
+        </article>
+
+        <article class="card col-6" aria-labelledby="p-jobcoach-title">
+          <img src="https://liziming.com/images//teasers/2024-chi-lbw-vr-llm-autistic-training.jpg"
+            alt="VR cafe training with LLM customer avatar" style="width:100%;border-radius:10px;margin-bottom:10px;">
+          <h3 id="p-jobcoach-title">Gen AI Avatars for Job Communication Training in VR</h3>
+          <p class="meta">VR role play with AI customers, plus a web CMS for job coaches to author scenarios using text
+            prompts.</p>
+          <div class="chips"><span class="chip">VR</span><span class="chip">LLM</span><span
+              class="chip">Accessibility</span></div>
+          <ul class="list">
+            <li><strong>Links</strong> <a href="https://liziming.com/projects/2025-vr-llm-avatar/" target="_blank"
+                rel="noopener">Project page</a> · <a href="https://dl.acm.org/doi/10.1145/3706598.3713507"
+                target="_blank" rel="noopener">CHI 2025</a> · <a href="https://dl.acm.org/doi/10.1145/3613905.3651996"
+                target="_blank" rel="noopener">CHI EA 2024</a></li>
+          </ul>
+        </article>
+
+        <article class="card col-6" aria-labelledby="p-qa-title">
+          <img src="https://liziming.com/images//teasers/2025-chi-lbw-chatbot-public-speaking.png"
+            alt="Avatar Q and A practice screenshot" style="width:100%;border-radius:10px;margin-bottom:10px;">
+          <h3 id="p-qa-title">VR LLM Agents for Public Speaking Q&A</h3>
+          <p class="meta">VR and desktop chatbot simulate spontaneous Q and A to reduce anxiety and build confidence.
+          </p>
+          <div class="chips"><span class="chip">VR</span><span class="chip">LLM</span></div>
+          <ul class="list">
+            <li><strong>Links</strong> <a href="https://liziming.com/projects/2025-vr-llm-avatar-public-speaking/"
+                target="_blank" rel="noopener">Project page</a> · <a
+                href="https://dl.acm.org/doi/10.1145/3706599.3720177" target="_blank" rel="noopener">CHI EA 2025</a>
+            </li>
+          </ul>
+        </article>
+
+        <article class="card col-6" aria-labelledby="p-driving-title">
+          <img src="https://liziming.com/images//teasers/2025-chi-lbw-one-handed-signing.png"
+            alt="One handed signing while driving setup" style="width:100%;border-radius:10px;margin-bottom:10px;">
+          <h3 id="p-driving-title">Accessible In Vehicle Communication for DHH Drivers</h3>
+          <p class="meta">Wizard of Oz study on one handed signing and fingerspelling for in vehicle interactions, with
+            camera placement trade offs.</p>
+          <div class="chips"><span class="chip">Accessibility</span><span class="chip">Automotive</span></div>
+          <ul class="list">
+            <li><strong>Links</strong> <a href="https://liziming.com/projects/2025-digital-driving-assistant/"
+                target="_blank" rel="noopener">Project page</a> · <a
+                href="https://dl.acm.org/doi/10.1145/3706599.3719868" target="_blank" rel="noopener">CHI EA 2025</a>
+            </li>
+          </ul>
+        </article>
+
+        <article class="card col-6" aria-labelledby="p-haptic-title">
+          <img src="https://liziming.com/images//teasers/2024-assets-soundhapticvr.png"
+            alt="Head based haptic rig for VR" style="width:100%;border-radius:10px;margin-bottom:10px;">
+          <h3 id="p-haptic-title">SoundHapticVR: Head Based Haptic Audio Cues</h3>
+          <p class="meta">Transforms spatial audio into tactile patterns using multi channel actuators to support
+            orientation and awareness.</p>
+          <div class="chips"><span class="chip">VR</span><span class="chip">Haptics</span><span
+              class="chip">Accessibility</span></div>
+          <ul class="list">
+            <li><strong>Links</strong> <a href="https://liziming.com/projects/2024-vr-sound-accessibility-via-haptic/"
+                target="_blank" rel="noopener">Project page</a> · <a
+                href="https://dl.acm.org/doi/10.1145/3663548.3675639" target="_blank" rel="noopener">ASSETS 2024</a>
+            </li>
+          </ul>
+        </article>
+
+        <article class="card col-6" aria-labelledby="p-soundviz-title">
+          <img src="https://liziming.com/images//teasers/2024-taccess-soundvizvr-games.png"
+            alt="Sound visualization indicators in Unity" style="width:100%;border-radius:10px;margin-bottom:10px;">
+          <h3 id="p-soundviz-title">SoundVizVR: Visual Sound Cues for VR</h3>
+          <p class="meta">Game engine plugin that renders sound indicators in VR to support DHH players and developers.
+          </p>
+          <div class="chips"><span class="chip">Unity</span><span class="chip">Accessibility</span></div>
+          <ul class="list">
+            <li><strong>Links</strong> <a href="https://liziming.com/projects/2021-vr-sound-accessibility-via-visual/"
+                target="_blank" rel="noopener">Project page</a> · <a
+                href="https://github.com/ZimingLiii/SoundVizVR-Plugin" target="_blank" rel="noopener">Code</a> · <a
+                href="https://dl.acm.org/doi/10.1145/3698882" target="_blank" rel="noopener">TACCESS 2024</a></li>
+          </ul>
+        </article>
+
+        <article class="card col-6" aria-labelledby="p-rotate-title">
+          <h3 id="p-rotate-title">RotateEntry: Controller Rolling Text Entry for 3DoF VR</h3>
+          <p class="meta">Text entry method using controller roll to navigate a virtual QWERTY keyboard, designed for
+            limited motion VR setups.</p>
+          <div class="chips"><span class="chip">Unity</span><span class="chip">VR</span><span class="chip">Interaction</span></div>
+          <ul class="list">
+            <li><strong>Links</strong> <a href="https://liziming.com/projects/2020-vr-rotate-enry/" target="_blank"
+                rel="noopener">Project page</a></li>
+          </ul>
+        </article>
+
+        <article class="card col-6" aria-labelledby="p-colorlift-title">
+          <h3 id="p-colorlift-title">Accessible Color Description with Generative AI</h3>
+          <p class="meta">Desktop app that captures on screen colors and produces natural language descriptions with
+            configurable LLMs.</p>
+          <div class="chips"><span class="chip">Electron</span><span class="chip">JavaScript</span><span
+              class="chip">LLM</span></div>
+          <ul class="list">
+            <li><strong>Links</strong> <a href="https://liziming.com/side_projects/2024-colorlift/" target="_blank"
+                rel="noopener">Project page</a> · <a href="https://github.com/Reedo0910/ColorLift" target="_blank"
+                rel="noopener">Code</a></li>
+          </ul>
+        </article>
+
+        <article class="card col-12" aria-labelledby="p-games-title">
+          <h3 id="p-games-title">Creative works, small games</h3>
+          <p class="meta">A few jam and prototype games.</p>
+          <div class="chips"><span class="chip">Unity</span><span class="chip">Game design</span></div>
+          <ul class="list">
+            <li><a href="https://liziming.com/game_projects/2020-5-crazy-pete/" target="_blank" rel="noopener">Crazy
+                Pete’s Space Deals</a></li>
+            <li><a href="https://liziming.com/game_projects/2020-1-pave-the-way/" target="_blank" rel="noopener">Pave
+                the Way</a></li>
+            <li><a href="https://liziming.com/game_projects/2020-1-paint-war/" target="_blank" rel="noopener">Paint
+                War</a></li>
+            <li><a href="https://liziming.com/game_projects/2020-1-fix-the-game/" target="_blank" rel="noopener">Fix the
+                Game</a></li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+
+    <section id="research">
+      <h2>Selected Publications</h2>
+      <div class="card">
+        <ul class="list">
+          <li><strong>Generative Role-Play Communication Training in Virtual Reality for Autistic Individuals: A Study on Job Coach Experiences in Vocational Training Programs</strong>,
+            CHI 2025. <a href="https://dl.acm.org/doi/10.1145/3706598.3713507" target="_blank" rel="noopener">Details</a></li>
+          <li><strong>Exploring Large Language Model-Driven Agents for Environment-Aware Spatial Interactions and Conversations in Virtual Reality Role-Play Scenarios</strong>, IEEE VR 2025. <a
+              href="https://ieeexplore.ieee.org/document/10937341" target="_blank" rel="noopener">Details</a></li>
+          <li><strong>Exploring the SoundVizVR Plugin in the Development of Sound-Accessible Virtual Reality Games: Insights from Game Developers and Players</strong>, ACM TACCESS 2024. <a href="https://dl.acm.org/doi/10.1145/3698882" target="_blank" rel="noopener">Details</a> · <a href="https://github.com/ZimingLiii/SoundVizVR-Plugin"
+              target="_blank" rel="noopener">Code</a></li>
+          <li><strong>SoundHapticVR: Head-Based Spatial Haptic Feedback for Accessible Sounds in Virtual Reality for Deaf and Hard of Hearing Users</strong>, ASSETS 2024. <a
+              href="https://dl.acm.org/doi/10.1145/3663548.3675639" target="_blank" rel="noopener">Details</a></li>
+          <li><strong>Haptic2FA: Haptics-Based Accessible Two-Factor Authentication for Blind and Low Vision People</strong>, MobileHCI 2024. <a href="https://dl.acm.org/doi/10.1145/3676509" target="_blank" rel="noopener">Details</a></li>
+          <li><strong>Exploring the Use of Large Language Model-Driven Chatbots in Virtual Reality to Train Autistic Individuals in Job Communication Skills</strong>, CHI EA 2024. <a
+              href="https://dl.acm.org/doi/10.1145/3613905.3651996" target="_blank" rel="noopener">Details</a></li>
+          <li><strong>Haptic-Captioning: Using Audio-Haptic Interfaces to Enhance Speaker Indication in Real-Time Captions for Deaf and Hard-of-Hearing Viewers</strong>, CHI 2023. <a href="https://dl.acm.org/doi/10.1145/3544548.3581076" target="_blank"
+              rel="noopener">Details</a></li>
+          <li><strong>SoundVizVR: Sound Indicators for Accessible Sounds in Virtual Reality for Deaf or Hard-of-Hearing Users</strong>, ASSETS 2022. <a href="https://dl.acm.org/doi/abs/10.1145/3517428.3544817" target="_blank" rel="noopener">Details</a></li>
+        </ul>
+        <p class="meta">Full list with authors, venues, and videos on <a href="https://liziming.com" target="_blank" rel="noopener">my site</a>.</p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="grid">
+        <div class="card col-6">
+          <h3>Research</h3>
+          <div class="chips">
+            <span class="chip">Study design</span><span class="chip">Interview and observation</span><span
+              class="chip">Usability testing</span><span class="chip">Telemetry analysis</span><span
+              class="chip">Synthesis</span>
+          </div>
+        </div>
+        <div class="card col-6">
+          <h3>Prototyping</h3>
+          <div class="chips">
+            <span class="chip">Unity</span><span class="chip">C#</span><span class="chip">Node.js</span><span
+              class="chip">Svelte</span><span class="chip">Vue</span><span class="chip">TypeScript</span><span
+              class="chip">Python</span>
+          </div>
+        </div>
+        <div class="card col-6">
+          <h3>Domains</h3>
+          <div class="chips">
+            <span class="chip">LLM agents</span><span class="chip">Accessibility</span><span class="chip">Game
+              UX</span><span class="chip">Tools UX</span><span class="chip">Education and training</span>
+          </div>
+        </div>
+        <div class="card col-6">
+          <h3>Collaboration</h3>
+          <div class="chips">
+            <span class="chip">Job coaches</span><span class="chip">Trainees</span><span class="chip">Engineers and
+              designers</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience and education</h2>
+      <div class="grid">
+        <div class="card col-6">
+          <h3>PhD, Computing and Information Sciences, RIT</h3>
+          <p class="meta">HCI and Accessibility track, CAIR and AIR Labs.</p>
+          <ul class="list">
+            <li>Dissertation on LLM driven avatars for inclusive communication training</li>
+            <li>Community partners include The Arc Ontario and AutismUp</li>
+          </ul>
+        </div>
+        <div class="card col-6">
+          <h3>Awards and service</h3>
+          <ul class="list">
+            <li>RIT Outstanding Graduate Student Award 2025, PhD category</li>
+            <li>Reviews and service for HCI venues</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p>Email <a href="mailto:zl1398@rit.edu">zl1398[at]rit.edu</a>, website <a href="https://liziming.com"
+            target="_blank" rel="noopener">liziming.com</a>, GitHub <a href="https://github.com/Reedo0910"
+            target="_blank" rel="noopener">Reedo0910</a>, LinkedIn <a href="https://www.linkedin.com/in/ziming--li"
+            target="_blank" rel="noopener">Profile</a></p>
+        <!-- <p class="meta">Replace any placeholder links as needed. Each project benefits from a 30 to 60 second demo clip.</p> -->
+      </div>
+    </section>
+
+    <footer class="site" role="contentinfo">
+      <span>© 2025 Ziming Li</span>
+    </footer>
+  </div>
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const id = a.getAttribute('href').slice(1);
+        const el = document.getElementById(id);
+        if (el) {
+          e.preventDefault();
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
