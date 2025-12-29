@@ -51,6 +51,17 @@
       padding: 24px;
     }
 
+    .avatar {
+      width: 90px;
+      height: 90px;
+      border-radius: 500px;
+      border: 1px solid #263043;
+      object-fit: cover;
+      display: block;
+      margin-bottom: 15px;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+    }
+
     header.site {
       display: flex;
       gap: 16px;
@@ -253,15 +264,19 @@
         <a href="#games">Games</a>
         <a href="#research">Research</a>
         <a href="#contact">Contact</a>
+        <a href="/cn">中文</a>
       </nav>
     </header>
 
     <section class="hero" id="top">
       <div>
-        <span class="badge">VR/MR, LLM-Driven Avatars, Accessibility</span>
-        <h1 class="title">Portfolio, Ziming Li</h1>
+        <!-- <span class="badge">VR/MR, LLM-Driven Avatars, Accessibility</span> -->
+        <img class="avatar" src="https://liziming.com/images/Ziming_Li_Profile.JPG" alt="Portrait">
+        <h1 class="title">Ziming Li</h1>
         <p class="subtitle">PhD candidate in Computing and Information Sciences at Rochester Institute of Technology,
-          advised by Dr. Roshan L. Peiris. Member of CAIR and AIR Labs. Based in Rochester, NY.</p>
+          advised by <a href="https://www.roshanpeiris.com/" target="_blank" rel="noopener">Dr. Roshan L. Peiris</a>.
+          Member of CAIR and AIR Labs.
+          Based in Rochester, NY.</p>
         <div class="cta">
           <a class="btn primary" href="#projects">View projects</a>
           <a class="btn" href="mailto:zl1398@rit.edu">Email me</a>
@@ -462,8 +477,8 @@
       <div class="grid">
 
         <article class="card col-6" aria-labelledby="g-crazy-title">
-          <img src="https://liziming.com/images/projects/game%20projects/2020-5-crazy-pete/crazy-pete-screenshot-1.png" alt=""
-            style="width:100%;border-radius:10px;margin-bottom:10px;">
+          <img src="https://liziming.com/images/projects/game%20projects/2020-5-crazy-pete/crazy-pete-screenshot-1.png"
+            alt="" style="width:100%;border-radius:10px;margin-bottom:10px;">
           <h3 id="g-crazy-title">Crazy Pete’s Space Deals</h3>
           <p class="meta">Satirical business simulation. You play a used spaceship dealer reading customer preferences,
             managing patience, and maximizing margin.</p>
@@ -479,8 +494,9 @@
         </article>
 
         <article class="card col-6" aria-labelledby="g-pave-title">
-          <img src="https://liziming.com/images/projects/game%20projects/2020-4-pave-the-way/pave-the-way-screenshot-1.png" alt=""
-            style="width:100%;border-radius:10px;margin-bottom:10px;">
+          <img
+            src="https://liziming.com/images/projects/game%20projects/2020-4-pave-the-way/pave-the-way-screenshot-1.png"
+            alt="" style="width:100%;border-radius:10px;margin-bottom:10px;">
           <h3 id="g-pave-title">Pave the Way</h3>
           <p class="meta">Endless runner strategy. Use Injector and Disintegrator
             to keep the robot moving and push the score higher.</p>
@@ -491,23 +507,24 @@
             <li><strong>Download</strong> <a href="https://liziming.com/files/projects/pave-the-way/PaveTheWay.zip"
                 target="_blank" rel="noopener">Windows build</a></li>
             <li><strong>Design doc</strong> <a
-                href="https://liziming.com/files/projects/pave-the-way/Pave%20the%20way%20game%20design%20document%20-%20Ziming%20Li.pdf" target="_blank"
-                rel="noopener">PDF</a></li>
+                href="https://liziming.com/files/projects/pave-the-way/Pave%20the%20way%20game%20design%20document%20-%20Ziming%20Li.pdf"
+                target="_blank" rel="noopener">PDF</a></li>
             <li><strong>Page</strong> <a href="https://liziming.com/game_projects/2020-4-pave-the-way/" target="_blank"
                 rel="noopener">Project page</a></li>
           </ul>
         </article>
 
         <article class="card col-6" aria-labelledby="g-paint-title">
-          <img src="https://liziming.com/images/projects/game%20projects/2020-3-paint-war/paint-war-screenshot-1.png" alt=""
-            style="width:100%;border-radius:10px;margin-bottom:10px;">
+          <img src="https://liziming.com/images/projects/game%20projects/2020-3-paint-war/paint-war-screenshot-1.png"
+            alt="" style="width:100%;border-radius:10px;margin-bottom:10px;">
           <h3 id="g-paint-title">Paint War</h3>
           <p class="meta">2D multiplayer combat with pixel art and chiptune. Modes include 2v2 and free for all. Paint
             territory while using character skills and items.</p>
           <ul class="list">
             <li><strong>Role</strong> Game art</li>
             <li><strong>Input</strong> Nintendo Joycon and keyboard</li>
-            <li><strong>Download</strong> <a href="https://liziming.com/game_projects/2020-3-paint-war/'/files/projects/paint-war/Paint%20War%20-%20Executable.zip'"
+            <li><strong>Download</strong> <a
+                href="https://liziming.com/game_projects/2020-3-paint-war/'/files/projects/paint-war/Paint%20War%20-%20Executable.zip'"
                 target="_blank" rel="noopener">Windows build</a></li>
             <li><strong>Page</strong> <a href="https://liziming.com/game_projects/2020-3-paint-war/" target="_blank"
                 rel="noopener">Project page</a></li>
@@ -515,8 +532,9 @@
         </article>
 
         <article class="card col-6" aria-labelledby="g-fix-title">
-          <img src="https://liziming.com/images/projects/game%20projects/2020-1-fix-the-game/fix-the-game-screenshot-1.png" alt=""
-            style="width:100%;border-radius:10px;margin-bottom:10px;">
+          <img
+            src="https://liziming.com/images/projects/game%20projects/2020-1-fix-the-game/fix-the-game-screenshot-1.png"
+            alt="" style="width:100%;border-radius:10px;margin-bottom:10px;">
           <h3 id="g-fix-title">Fix the Game</h3>
           <p class="meta">Global Game Jam 2020 entry. A multiplayer party game about repairing a corrupted scene while
             surviving monster attacks.</p>
