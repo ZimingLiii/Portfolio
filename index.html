@@ -31,7 +31,8 @@
     body {
       margin: 0;
       font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
-      background: linear-gradient(180deg, #0b0c10, #0e1016);
+      /* background: linear-gradient(180deg, #0b0c10, #0e1016); */
+      background-color: var(--bg);
       color: var(--text);
       line-height: 1.6;
     }
@@ -58,6 +59,7 @@
       border: 1px solid #263043;
       object-fit: cover;
       display: block;
+      margin-left: 10px;
       margin-bottom: 15px;
       box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
     }
@@ -264,7 +266,13 @@
         <a href="#games">Games</a>
         <a href="#research">Research</a>
         <a href="#contact">Contact</a>
-        <a href="/cn">中文</a>
+        <a href="/cn">中文 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-3"
+            style="height: 0.75em; width: 0.75em; color: #fff;">
+            <path
+              d="M6.22 8.72a.75.75 0 0 0 1.06 1.06l5.22-5.22v1.69a.75.75 0 0 0 1.5 0v-3.5a.75.75 0 0 0-.75-.75h-3.5a.75.75 0 0 0 0 1.5h1.69L6.22 8.72Z" />
+            <path
+              d="M3.5 6.75c0-.69.56-1.25 1.25-1.25H7A.75.75 0 0 0 7 4H4.75A2.75 2.75 0 0 0 2 6.75v4.5A2.75 2.75 0 0 0 4.75 14h4.5A2.75 2.75 0 0 0 12 11.25V9a.75.75 0 0 0-1.5 0v2.25c0 .69-.56 1.25-1.25 1.25h-4.5c-.69 0-1.25-.56-1.25-1.25v-4.5Z" />
+          </svg></a>
       </nav>
     </header>
 
@@ -291,7 +299,7 @@
           <div>Focus</div>
           <div>VR/MR prototyping, LLM Avatars, XR Accessibility</div>
           <div>Tech</div>
-          <div>Unity, JavaScript, Node.js, Svelte, Vue, C#</div>
+          <div>Unity, C#, JavaScript, Node.js</div>
           <div>Open to</div>
           <div>UX Research, UX Engineer, VR/MR Prototyper, Game UX</div>
         </div>
