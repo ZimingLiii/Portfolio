@@ -16,6 +16,7 @@
       --ring: rgba(96, 165, 250, 0.35);
       --chip: #1f2430;
       --chip-border: #2a3140;
+      --highlight: rgb(47, 49, 198);
     }
 
     * {
@@ -66,7 +67,7 @@
       gap: 16px;
       align-items: center;
       justify-content: space-between;
-      padding: 8px 0 24px;
+      padding: 18px 0 24px;
       position: sticky;
       top: 0;
       background: rgba(11, 12, 16, 0.65);
@@ -222,6 +223,11 @@
       color: #d1d7e4;
     }
 
+    .chip.primary {
+      background: var(--highlight);
+      color: #fff;
+    }
+
     .list {
       margin: 8px 0 0;
       padding: 0;
@@ -290,16 +296,15 @@
         <!-- <span class="badge">虚拟现实，基于大语言模型技术的虚拟角色，无障碍技术</span> -->
         <img class="avatar" src="https://liziming.com/images/Ziming_Li_Profile.JPG" alt="Portrait">
         <h1 class="title">李梓铭</h1>
-        <p class="subtitle">罗切斯特理工学院（Rochester Institute of Technology，RIT）计算与信息科学博士生，导师是 <a
-            href="https://www.roshanpeiris.com/" target="_blank" rel="noopener">Dr. Roshan L. Peiris</a>。隶属于 RIT CAIR
-          (Center for Accessibility and Inclusion Research) 与 AIR (Accessible and Immersive Realities)
-          实验室。现居美国纽约州罗切斯特市。</p>
+        <p class="subtitle">美国罗切斯特理工学院（Rochester Institute of Technology，RIT）计算与信息科学博士生。 导师为 <a
+            href="https://www.roshanpeiris.com/" target="_blank" rel="noopener">Dr. Roshan L. Peiris</a>。RIT CAIR
+          (Center for Accessibility and Inclusion Research) 实验室与 AIR (Accessible and Immersive Realities)
+          实验室成员。 现居美国纽约州罗切斯特市。</p>
         <div class="cta">
-          <a class="btn primary" href="#projects">查看项目</a>
-          <a class="btn" href="mailto:zl1398@rit.edu">发邮件</a>
+          <a class="btn" href="mailto:zimingleee@gmail.com">邮件联系</a>
           <a class="btn" href="https://liziming.com" target="_blank" rel="noopener">学术网站（英文）</a>
           <a class="btn" href="https://github.com/Reedo0910" target="_blank" rel="noopener">GitHub</a>
-          <a class="btn" href="https://www.linkedin.com/in/ziming--li" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="https://www.linkedin.com/in/ziming--li" target="_blank" rel="noopener">领英</a>
         </div>
         <p class="meta">最后更新 2025-12-29</p>
       </div>
@@ -317,15 +322,18 @@
 
 
     <section id="projects">
-      <h2>项目</h2>
+      <h2>参与项目</h2>
       <div class="grid">
 
         <article class="card col-6" aria-labelledby="p-envaware-title">
           <img src="https://liziming.com/images//teasers/2025-ieee-vr-llm-spatial-interactions.png"
             alt="在杂货店场景中，具备环境感知的 AI 虚拟角色交互" style="width:100%;border-radius:10px;margin-bottom:10px;">
           <h3 id="p-envaware-title">具备虚拟环境与用户交互感知的生成式 AI 虚拟角色</h3>
-          <p class="meta">大语言模型虚拟角色感知场景布局，理解用户的交互与语音，生成与语境一致的实时对话与动作。用于 VR 虚拟现实中的角色模拟与训练。</p>
-          <div class="chips"><span class="chip">VR</span><span class="chip">LLM</span></div>
+          <p class="meta"><strong>科研项目</strong>。利用 AI 大语言模型虚拟角色感知场景布局，理解用户的交互与语音，生成与语境一致的实时对话与动作。用于 VR 虚拟现实中的角色模拟与训练。
+          </p>
+          <div class="chips"><span class="chip primary">主要贡献者</span><span class="chip">VR</span><span
+              class="chip">大语言模型</span>
+          </div>
           <ul class="list">
             <li><strong>链接</strong> <a href="https://liziming.com/projects/2025-vr-llm-spatial-avatar/" target="_blank"
                 rel="noopener">项目页面（英文）</a> · <a href="https://ieeexplore.ieee.org/document/10796354" target="_blank"
@@ -338,8 +346,9 @@
           <img src="https://liziming.com/images//teasers/2024-chi-lbw-vr-llm-autistic-training.jpg"
             alt="使用 LLM 顾客虚拟角色在 VR 咖啡馆进行训练" style="width:100%;border-radius:10px;margin-bottom:10px;">
           <h3 id="p-jobcoach-title">面向工作沟通训练的 VR 生成式 AI 虚拟角色</h3>
-          <p class="meta">在 VR 虚拟现实中与 AI 顾客进行角色扮演对话，同时提供网页端 CMS，便于职业教练通过文本提示编写训练情景。</p>
-          <div class="chips"><span class="chip">VR</span><span class="chip">LLM</span><span class="chip">无障碍</span>
+          <p class="meta"><strong>科研项目</strong>。在 VR 虚拟现实中与 AI 大语言模型虚拟顾客进行角色扮演对话，同时提供网页端 CMS，便于职业教练通过文本提示编写训练情景。</p>
+          <div class="chips"><span class="chip primary">主要贡献者</span><span class="chip">VR</span><span
+              class="chip">大语言模型</span><span class="chip">无障碍</span>
           </div>
           <ul class="list">
             <li><strong>链接</strong> <a href="https://liziming.com/projects/2025-vr-llm-avatar/" target="_blank"
@@ -349,54 +358,16 @@
           </ul>
         </article>
 
-        <article class="card col-6" aria-labelledby="p-qa-title">
-          <img src="https://liziming.com/images//teasers/2025-chi-lbw-chatbot-public-speaking.png" alt="虚拟角色问答练习截图"
-            style="width:100%;border-radius:10px;margin-bottom:10px;">
-          <h3 id="p-qa-title">用于公众演讲问答的 VR AI 智能体</h3>
-          <p class="meta">AI 聊天机器人模拟公众演讲下的即兴问答，帮助降低焦虑并建立自信。</p>
-          <div class="chips"><span class="chip">VR</span><span class="chip">LLM</span></div>
-          <ul class="list">
-            <li><strong>链接</strong> <a href="https://liziming.com/projects/2025-vr-llm-avatar-public-speaking/"
-                target="_blank" rel="noopener">项目页面（英文）</a> · <a href="https://dl.acm.org/doi/10.1145/3706599.3720177"
-                target="_blank" rel="noopener">CHI EA 2025</a>
-            </li>
-          </ul>
-        </article>
 
-        <article class="card col-6" aria-labelledby="p-driving-title">
-          <img src="https://liziming.com/images//teasers/2025-chi-lbw-one-handed-signing.png" alt="驾驶场景下单手手语输入的搭建"
-            style="width:100%;border-radius:10px;margin-bottom:10px;">
-          <h3 id="p-driving-title">面向听障（DHH）驾驶员的车内无障碍沟通</h3>
-          <p class="meta">采用 Wizard-of-Oz 研究方法，探索车内交互中单手手语与指拼的可行性，并分析摄像头摆放的权衡。</p>
-          <div class="chips"><span class="chip">无障碍</span><span class="chip">驾驶模拟</span></div>
-          <ul class="list">
-            <li><strong>链接</strong> <a href="https://liziming.com/projects/2025-digital-driving-assistant/"
-                target="_blank" rel="noopener">项目页面（英文）</a> · <a href="https://dl.acm.org/doi/10.1145/3706599.3719868"
-                target="_blank" rel="noopener">CHI EA 2025</a>
-            </li>
-          </ul>
-        </article>
-
-        <article class="card col-6" aria-labelledby="p-haptic-title">
-          <img src="https://liziming.com/images//teasers/2024-assets-soundhapticvr.png" alt="用于 VR 的头部触觉装置"
-            style="width:100%;border-radius:10px;margin-bottom:10px;">
-          <h3 id="p-haptic-title">SoundHapticVR：基于头部的触觉音频提示</h3>
-          <p class="meta">将空间音频转换为触觉模式，通过多通道执行器支持方向感与环境感知。</p>
-          <div class="chips"><span class="chip">VR</span><span class="chip">触觉</span><span class="chip">无障碍</span></div>
-          <ul class="list">
-            <li><strong>链接</strong> <a href="https://liziming.com/projects/2024-vr-sound-accessibility-via-haptic/"
-                target="_blank" rel="noopener">项目页面（英文）</a> · <a href="https://dl.acm.org/doi/10.1145/3663548.3675639"
-                target="_blank" rel="noopener">ASSETS 2024</a>
-            </li>
-          </ul>
-        </article>
 
         <article class="card col-6" aria-labelledby="p-soundviz-title">
           <img src="https://liziming.com/images//teasers/2024-taccess-soundvizvr-games.png" alt="Unity 中的声音可视化指示器"
             style="width:100%;border-radius:10px;margin-bottom:10px;">
-          <h3 id="p-soundviz-title">SoundVizVR：面向 VR 虚拟现实的可视化声音提示</h3>
-          <p class="meta">Unity 游戏引擎插件，在 VR 虚拟现实中渲染声音指示器，帮助开发者设计对听障玩家友好的游戏。</p>
-          <div class="chips"><span class="chip">Unity</span><span class="chip">无障碍</span></div>
+          <h3 id="p-soundviz-title">SoundVizVR：面向 VR 虚拟现实的可视化声音显示</h3>
+          <p class="meta"><strong>科研项目</strong>。在 VR 虚拟现实中渲染声音指示器，帮助开发者设计开发对听障玩家友好的游戏。</p>
+          <div class="chips"><span class="chip primary">主要贡献者</span><span class="chip">Unity</span><span
+              class="chip">无障碍</span>
+          </div>
           <ul class="list">
             <li><strong>链接</strong> <a href="https://liziming.com/projects/2021-vr-sound-accessibility-via-visual/"
                 target="_blank" rel="noopener">项目页面（英文）</a> · <a href="https://github.com/ZimingLiii/SoundVizVR-Plugin"
@@ -405,38 +376,13 @@
           </ul>
         </article>
 
-        <article class="card col-6" aria-labelledby="p-haptic2fa-title">
-          <img src="https://liziming.com/images//teasers/2024-mhci-haptic2fa.jpeg" alt="手机与手表的 Haptic2FA 概念示意"
-            style="width:100%;border-radius:10px;margin-bottom:10px;">
-          <h3 id="p-haptic2fa-title">提升盲人及低视力用户的双因素认证无障碍体验</h3>
-          <p class="meta">用独特的振动模式替代视觉验证码，使 2FA 在屏幕阅读器环境下依然私密且可用。</p>
-          <div class="chips"><span class="chip">触觉</span><span class="chip">无障碍</span></div>
-          <ul class="list">
-            <li><strong>链接</strong> <a href="https://liziming.com/projects/2024-haptic-2FA/" target="_blank"
-                rel="noopener">项目页面（英文）</a> · <a href="https://dl.acm.org/doi/10.1145/3676509" target="_blank"
-                rel="noopener">MobileHCI 2024</a></li>
-          </ul>
-        </article>
-
-        <article class="card col-6" aria-labelledby="p-hapticcaption-title">
-          <img src="https://liziming.com/images//teasers/2023-chi-haptic-captioning.png" alt="Haptic-Captioning 手腕设备与组件"
-            style="width:100%;border-radius:10px;margin-bottom:10px;">
-          <h3 id="p-hapticcaption-title">通过振动反馈提升实时无障碍体验</h3>
-          <p class="meta">Haptic-Captioning 通过手腕振动补充字幕，在多人对话场景中提示说话者。</p>
-          <div class="chips"><span class="chip">触觉</span><span class="chip">无障碍</span></div>
-          <ul class="list">
-            <li><strong>链接</strong> <a href="https://liziming.com/projects/2023-haptic-caption/" target="_blank"
-                rel="noopener">项目页面（英文）</a> · <a href="https://dl.acm.org/doi/10.1145/3544548.3581076" target="_blank"
-                rel="noopener">CHI 2023</a></li>
-          </ul>
-        </article>
-
         <article class="card col-6" aria-labelledby="p-rotate-title">
           <img src="https://liziming.com/images//teasers/2021-frameless-rotateentry.png" alt=""
             style="width:100%;border-radius:10px;margin-bottom:10px;">
           <h3 id="p-rotate-title">RotateEntry：面向 3DoF VR 设备的控制器滚动文本输入方式</h3>
-          <p class="meta">通过控制器滚转来导航虚拟 QWERTY 键盘的文本输入方式，面向动作受限的 VR 虚拟现实使用场景。</p>
-          <div class="chips"><span class="chip">Unity</span><span class="chip">VR</span><span class="chip">交互</span>
+          <p class="meta"><strong>科研项目</strong>。通过控制器滚转来导航虚拟 QWERTY 键盘的文本输入方式，面向动作受限的 VR 虚拟现实使用场景。</p>
+          <div class="chips"><span class="chip primary">主要贡献者</span><span class="chip">VR</span><span
+              class="chip">交互技术</span>
           </div>
           <ul class="list">
             <li><strong>链接</strong> <a href="https://liziming.com/projects/2020-vr-rotate-enry/" target="_blank"
@@ -448,13 +394,82 @@
           <img src="https://liziming.com/images/projects/side projects/colorlift/colorlift-1.png" alt=""
             style="width:100%;border-radius:10px;margin-bottom:10px;">
           <h3 id="p-colorlift-title">使用生成式 AI 进行无障碍颜色描述</h3>
-          <p class="meta">个人项目。桌面应用捕获屏幕颜色，并通过可配置的 LLM 生成自然语言描述。</p>
-          <div class="chips"><span class="chip">Electron</span><span class="chip">JavaScript</span><span
-              class="chip">LLM</span></div>
+          <p class="meta"><strong>个人项目</strong>。捕获屏幕颜色，并通过可配置的 AI 大语言模型生成自然语言描述。</p>
+          <div class="chips"><span class="chip primary">主要贡献者</span><span class="chip">Electron</span><span
+              class="chip">JavaScript</span><span class="chip">大语言模型</span></div>
           <ul class="list">
             <li><strong>链接</strong> <a href="https://liziming.com/side_projects/2024-colorlift/" target="_blank"
                 rel="noopener">项目页面（英文）</a> · <a href="https://github.com/Reedo0910/ColorLift" target="_blank"
                 rel="noopener">代码</a></li>
+          </ul>
+        </article>
+
+        <article class="card col-6" aria-labelledby="p-haptic-title">
+          <img src="https://liziming.com/images//teasers/2024-assets-soundhapticvr.png" alt="用于 VR 的头部触觉装置"
+            style="width:100%;border-radius:10px;margin-bottom:10px;">
+          <h3 id="p-haptic-title">SoundHapticVR：基于头部的触觉音频提示</h3>
+          <p class="meta"><strong>科研项目</strong>。将虚拟现实空间音频转换为触觉震动，通过多通道转换器支持对空间音频的方向与环境感知。</p>
+          <div class="chips"><span class="chip">VR</span><span class="chip">触觉技术</span><span class="chip">无障碍</span>
+          </div>
+          <ul class="list">
+            <li><strong>链接</strong> <a href="https://liziming.com/projects/2024-vr-sound-accessibility-via-haptic/"
+                target="_blank" rel="noopener">项目页面（英文）</a> · <a href="https://dl.acm.org/doi/10.1145/3663548.3675639"
+                target="_blank" rel="noopener">ASSETS 2024</a>
+            </li>
+          </ul>
+        </article>
+
+        <article class="card col-6" aria-labelledby="p-haptic2fa-title">
+          <img src="https://liziming.com/images//teasers/2024-mhci-haptic2fa.jpeg" alt="手机与手表的 Haptic2FA 概念示意"
+            style="width:100%;border-radius:10px;margin-bottom:10px;">
+          <h3 id="p-haptic2fa-title">盲人及低视力用户的双因素认证无障碍体验技术</h3>
+          <p class="meta"><strong>科研项目</strong>。用独特的振动模式替代视觉验证码，使 2FA 在屏幕阅读器环境下依然私密且可用。</p>
+          <div class="chips"><span class="chip">触觉技术</span><span class="chip">无障碍</span></div>
+          <ul class="list">
+            <li><strong>链接</strong> <a href="https://liziming.com/projects/2024-haptic-2FA/" target="_blank"
+                rel="noopener">项目页面（英文）</a> · <a href="https://dl.acm.org/doi/10.1145/3676509" target="_blank"
+                rel="noopener">MobileHCI 2024</a></li>
+          </ul>
+        </article>
+
+        <article class="card col-6" aria-labelledby="p-hapticcaption-title">
+          <img src="https://liziming.com/images//teasers/2023-chi-haptic-captioning.png" alt="Haptic-Captioning 手腕设备与组件"
+            style="width:100%;border-radius:10px;margin-bottom:10px;">
+          <h3 id="p-hapticcaption-title">通过振动反馈提供实时无障碍音频体验</h3>
+          <p class="meta"><strong>科研项目</strong>。通过手腕上的振动反馈补全字幕/音频信息，在多人对话场景中提示说话者。</p>
+          <div class="chips"><span class="chip">触觉技术</span><span class="chip">无障碍</span></div>
+          <ul class="list">
+            <li><strong>链接</strong> <a href="https://liziming.com/projects/2023-haptic-caption/" target="_blank"
+                rel="noopener">项目页面（英文）</a> · <a href="https://dl.acm.org/doi/10.1145/3544548.3581076" target="_blank"
+                rel="noopener">CHI 2023</a></li>
+          </ul>
+        </article>
+
+        <article class="card col-6" aria-labelledby="p-qa-title">
+          <img src="https://liziming.com/images//teasers/2025-chi-lbw-chatbot-public-speaking.png" alt="虚拟角色问答练习截图"
+            style="width:100%;border-radius:10px;margin-bottom:10px;">
+          <h3 id="p-qa-title">用于公众演讲问答的 VR AI 智能体</h3>
+          <p class="meta"><strong>科研项目</strong>。AI 大语言模型聊天机器人模拟公众演讲下的即兴问答，帮助降低焦虑并建立自信。</p>
+          <div class="chips"><span class="chip">VR</span><span class="chip">大语言模型</span></div>
+          <ul class="list">
+            <li><strong>链接</strong> <a href="https://liziming.com/projects/2025-vr-llm-avatar-public-speaking/"
+                target="_blank" rel="noopener">项目页面（英文）</a> · <a href="https://dl.acm.org/doi/10.1145/3706599.3720177"
+                target="_blank" rel="noopener">CHI EA 2025</a>
+            </li>
+          </ul>
+        </article>
+
+        <article class="card col-6" aria-labelledby="p-driving-title">
+          <img src="https://liziming.com/images//teasers/2025-chi-lbw-one-handed-signing.png" alt="驾驶场景下单手手语输入的搭建"
+            style="width:100%;border-radius:10px;margin-bottom:10px;">
+          <h3 id="p-driving-title">面向听障驾驶员的非接触式车机无障碍沟通</h3>
+          <p class="meta"><strong>科研项目</strong>。探索非接触式车机交互中听障驾驶员使用单手手语与指拼的可行性。</p>
+          <div class="chips"><span class="chip">无障碍</span><span class="chip">驾驶模拟</span></div>
+          <ul class="list">
+            <li><strong>链接</strong> <a href="https://liziming.com/projects/2025-digital-driving-assistant/"
+                target="_blank" rel="noopener">项目页面（英文）</a> · <a href="https://dl.acm.org/doi/10.1145/3706599.3719868"
+                target="_blank" rel="noopener">CHI EA 2025</a>
+            </li>
           </ul>
         </article>
       </div>
@@ -465,15 +480,33 @@
       <div class="grid">
 
         <article class="card col-6" aria-labelledby="g-brush-title">
-          <img src="img/brush-brush-screenshot.png"
-            alt="" style="width:100%;border-radius:10px;margin-bottom:10px;">
+          <img src="img/brush-brush-screenshot.png" alt="" style="width:100%;border-radius:10px;margin-bottom:10px;">
           <h3 id="g-crazy-title">牙刷转转</h3>
           <p class="meta">个人独立开发的休闲小游戏。</p>
           <ul class="list">
             <li><strong>职责</strong> 单人设计与开发</li>
-            <li><strong>规则</strong> 来回滑动用鼠标滚轮或触控板，在牙膏掉落前获得更多分数。</li>
-            <li><strong>游玩</strong> <a href="https://www.velasplayhouse.com/games/oops-my-toothpaste/"
-                target="_blank" rel="noopener">WebGL 版本</a></li>
+            <li><strong>规则</strong> 来回滑动用鼠标滚轮或触控板滚动牙刷，在牙膏掉落前获得更多分数。</li>
+            <li><strong>游玩</strong> <a href="https://www.velasplayhouse.com/games/oops-my-toothpaste/" target="_blank"
+                rel="noopener">WebGL 版本</a></li>
+          </ul>
+        </article>
+
+        <article class="card col-6" aria-labelledby="g-pave-title">
+          <img
+            src="https://liziming.com/images/projects/game%20projects/2020-4-pave-the-way/pave-the-way-screenshot-1.png"
+            alt="" style="width:100%;border-radius:10px;margin-bottom:10px;">
+          <h3 id="g-pave-title">Pave the Way</h3>
+          <p class="meta">类俄罗斯方块无尽跑酷策略游戏，填充道路让小机器人保持前进。</p>
+          <ul class="list">
+            <li><strong>职责</strong> 游戏主设计，关卡设计，视觉设计</li>
+            <li><strong>规则</strong> 填充器每次射击增加一个地面方块，消除器每次射击移除一个方块，机器人停止超过五秒则游戏结束。填充器无法在红色方块上添加方块。消除器无法移除红/蓝色方块。</li>
+            <li><strong>下载</strong> <a href="https://liziming.com/files/projects/pave-the-way/PaveTheWay.zip"
+                target="_blank" rel="noopener">Windows 版本</a></li>
+            <li><strong>设计文档</strong> <a
+                href="https://liziming.com/files/projects/pave-the-way/Pave%20the%20way%20game%20design%20document%20-%20Ziming%20Li.pdf"
+                target="_blank" rel="noopener"> 查看PDF</a></li>
+            <li><strong>页面</strong> <a href="https://liziming.com/game_projects/2020-4-pave-the-way/" target="_blank"
+                rel="noopener">项目页面（英文）</a></li>
           </ul>
         </article>
 
@@ -488,25 +521,6 @@
             <li><strong>下载</strong> <a href="https://liziming.com/files/projects/crazy-pete/CrazyPete.zip"
                 target="_blank" rel="noopener">Windows 版本</a></li>
             <li><strong>页面</strong> <a href="https://liziming.com/game_projects/2020-5-crazy-pete/" target="_blank"
-                rel="noopener">项目页面（英文）</a></li>
-          </ul>
-        </article>
-
-        <article class="card col-6" aria-labelledby="g-pave-title">
-          <img
-            src="https://liziming.com/images/projects/game%20projects/2020-4-pave-the-way/pave-the-way-screenshot-1.png"
-            alt="" style="width:100%;border-radius:10px;margin-bottom:10px;">
-          <h3 id="g-pave-title">Pave the Way</h3>
-          <p class="meta">类俄罗斯方块无尽跑酷策略游戏，填充道路让小机器人保持前进。</p>
-          <ul class="list">
-            <li><strong>职责</strong> 游戏设计，关卡设计，视觉设计</li>
-            <li><strong>规则</strong> 填充器每次射击增加一个地面方块，消除器每次射击移除一个方块，机器人停止超过五秒则游戏结束</li>
-            <li><strong>下载</strong> <a href="https://liziming.com/files/projects/pave-the-way/PaveTheWay.zip"
-                target="_blank" rel="noopener">Windows 版本</a></li>
-            <li><strong>设计文档</strong> <a
-                href="https://liziming.com/files/projects/pave-the-way/Pave%20the%20way%20game%20design%20document%20-%20Ziming%20Li.pdf"
-                target="_blank" rel="noopener">PDF</a></li>
-            <li><strong>页面</strong> <a href="https://liziming.com/game_projects/2020-4-pave-the-way/" target="_blank"
                 rel="noopener">项目页面（英文）</a></li>
           </ul>
         </article>
